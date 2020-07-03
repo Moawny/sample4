@@ -38,19 +38,10 @@ $(function () {
         },500)
 
     });
-
-    $(window).load(function() {
-        $('.loading > *').fadeOut(2000, function () {
-            $(this).parent().fadeOut(500, function () {
-                $(this).remove();
-                $('.counter').counterUp({
-                    time: 1000,
-                    offset: 100
-                });
-            });
-        });
-    });
-
+   $('.counter').counterUp({
+      time: 1000,
+      offset: 100
+   });
 });
 
 window.onload = function () {
