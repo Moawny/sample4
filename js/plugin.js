@@ -39,7 +39,7 @@ $(function () {
 
     });
 
-    $(window).on('load', function() {
+    $(window).load(function() {
         $('.loading > *').fadeOut(2000, function () {
             $(this).parent().fadeOut(500, function () {
                 $(this).remove();
